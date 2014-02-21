@@ -2,5 +2,5 @@ url: http://hazirguo.github.io/demo
 baseurl: /demo/blog
 #markdown: rdiscount
 #permalink: /blog/:year:month:day
-pygments: true
+pygments: /blog/:year:month:day/:title.html
 exclude: ['Rakefile.rb', 'CNAME', 'README.markdown']

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://getbootstrap.com/examples/theme/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>计算机体系结构课程实验</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	
+	<link href="../css/docs.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/theme.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style id="holderjs-style" type="text/css"></style></head>
+
+  <body role="document" youdao="bind" style="">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	  <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+		  <a class="navbar-brand" href="../">Computer Architecture</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../">Home</a></li>
+            <li><a href="../coursework">Coursework</a></li>
+			<li class="active"><a href=".">Experiments</a></li>
+			<li><a href="../materials">Materials & References</a></li>
+			<li><a href="../blog"><strong>Blog</strong></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="bs-docs-header" id="content">
+    	<div class="container">
+    		<h1>课程实验</h1>
+    	</div>
+    </div>
+
+    <div class="container bs-docs-container">
+	 <!-- <div class="row">
+	    <div class="col-md-12" role="main">
+			 <h1 class="page-header">课程实验</h1>
+		</div>
+	  </div>
+	-->
+	  <div class="row">
+        <div class="col-md-9" role="main">
+		  <div class="bs-docs-section">
+			 <h2 id="require" class="page-header">实验要求</h2>
+			 <p>本课程总共安排五次实验，实验内容基本涵盖本课程所讲到的所有章节，实验内容在适当的时候在主页上发布，请及时关注。每次实验要求有实验报告，实验报告自实验发布日起，在规定时间内通过 FTP 提交，具体提交方式见<a href="#commit">【提交说明】</a>。请务必独立完成实验！</p>
+		  </div>
+		  
+		   <div class="bs-docs-section">
+			 <h2 id="commit" class="page-header">提交说明</h2>
+			 <p> 本课程实验的实验报告全部通过 FTP 提交到服务器上，FTP 服务器地址为：<code>ftp://202.38.79.82 </code>，端口号：<code>8921</code>，只能在校园网内部使用。如果有不会使用 FTP 的同学，请猛戳<a href="#">这儿</a>。实验报告自发布日起即开放提交，截止日期到关闭提交，<strong>不要</strong>将实验报告通过邮件发送给助教，最终以正确提交到服务器上的为准。如有服务器登录不上，或者不会操作的同学，请及时通过邮件联系助教。  </p>
+			 <p>关于实验报告的提交，有以下几点说明，请认真阅读：</p>
+			 <ul>
+			 	<li>FTP 服务器上 <code>/experiments</code> 为实验报告提交的目录，下面有每次实验报告的子目录，提交到相应的文件夹下，如实验一的实验报告提交到 <code>lab1/</code> 文件夹下，依次类推。</li>
+				<li><strong>命名规范：</strong> </li>
+				<ul>
+					<li>每次实验新建一个文件夹（只有一个文件的也要建文件夹），文件夹以 <code>学号_姓名_实验编号</code> 命名。如学号为 PB01011001 张三的实验一实验报告，文件夹命名为 <code>PB01011001_张三_lab1 </code>。</li>
+					<li>文件夹<strong>不要打包</strong>，文件夹放实验报告，有程序的请附带<strong>源程序</strong>（编译文件、可执行文件不要），以及其它与实验有关的东西，命名不做硬性规定，请避免“新建文件”这样的命名。</li>
+					<li>如果在上传 FTP 过程中出现中断，再次上传时，服务器默认拒绝以相同的文件夹再次上传，这时需要修改文件夹的名字，请在原来的文件夹名后加上 <code>_review1</code>、<code>_review2</code>... ，再次上传。</li>
+					<li>如果已经成功提交之后，发现提交错误，或者还要继续进行修改，服务器默认拒绝删除已提交的文件夹，此时按照上条规则重新提交，最终我们打分以最后一次上传的为准。</li>
+				</ul>
+				<li>每个实验请在规定时间之内提交，预期无法上传，成绩为零！</li>
+				<li><strong>不要抄袭！</strong> 否则一律当零分处理！</li>
+			 </ul>
+		  </div>
+		  
+		  
+		   <div class="bs-docs-section">
+			 <h2 id="content" class="page-header">实验内容</h2>
+			 
+			 <h3 id="lab1">实验１</h3>
+			 <h3 id="lab2">实验２</h3>
+			 <h3 id="lab3">实验３</h3>
+			 <h3 id="lab4">实验４</h3>
+			 <h3 id="lab5">实验５</h3>
+		  </div>
+		</div>
+		
+		<div class="col-md-3">
+          <div class="bs-docs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-docs-sidenav">
+              
+                <li>
+					<a href="#require">实验要求</a>
+				</li>
+				
+				<li>
+					<a href="#commit">提交说明</a>
+				</li>
+				
+				<li>
+					<a href="#content">实验内容</a>
+					<ul class="nav">
+						<li><a href="#lab1">实验１</a></li>
+						<li><a href="#lab2">实验２</a></li>
+						<li><a href="#lab3">实验３</a></li>
+						<li><a href="#lab4">实验４</a></li>
+						<li><a href="#lab5">实验５</a></li>
+					</ul>
+				</li>
+			</ul>
+		  </div>
+		</div>
+
+	  </div> <!-- end row -->
+    </div> <!-- /container -->
+	
+	<hr/>
+	
+	<div class="footer">
+	   <center> Designed and built with the <a href="">bootstrap theme</a> by guohailin.</center>
+	</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/docs.min.js"></script>
+  
+
+</body></html>

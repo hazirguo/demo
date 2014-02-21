@@ -1,5 +1,8 @@
 url: http://hazirguo.github.io/demo
 baseurl: /demo/blog
+
+base: /demo
+
 #markdown: rdiscount
 permalink: /blog/:year:month:day/:title.html
 pygments: true

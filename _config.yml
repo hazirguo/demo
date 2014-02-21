@@ -1,5 +1,5 @@
-url: http://hazirguo.github.io/Computer_Architecture
-baseurl: /Computer_Architecture/blog
+url: http://hazirguo.github.io/demo
+baseurl: /demo/blog
 #markdown: rdiscount
 permalink: pretty
 pygments: true
